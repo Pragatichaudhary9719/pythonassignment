@@ -1,0 +1,7 @@
+# Program to ask the user for their name and print a greeting message
+
+# Taking input from the user
+name = input("Enter your name: ")
+
+# Printing the greeting message
+print("Hello, " + name + "! Welcome!")
