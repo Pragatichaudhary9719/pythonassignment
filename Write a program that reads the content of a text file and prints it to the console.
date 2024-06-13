@@ -1,0 +1,13 @@
+# Program to read the content of a text file and print it to the console
+
+# Specifying the filename
+filename = "output.txt"
+
+# Reading the content of the file and printing it
+try:
+    with open(filename, 'r') as file:
+        content = file.read()
+        print("Content of the file:")
+        print(content)
+except FileNotFoundError:
+    print("The file", filename, "does not exist.")
