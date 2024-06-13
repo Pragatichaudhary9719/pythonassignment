@@ -1,0 +1,26 @@
+# Program to convert a given string to title case
+
+def title_case(input_string):
+    # Split the input string into words
+    words = input_string.split()
+    
+    # Initialize an empty list to store capitalized words
+    capitalized_words = []
+    
+    # Capitalize each word and join them back into a string
+    for word in words:
+        capitalized_words.append(word.capitalize())
+    
+    # Join capitalized words into a single string with spaces
+    title_case_string = ' '.join(capitalized_words)
+    
+    return title_case_string
+
+# Taking input from the user
+user_input = input("Enter a string: ")
+
+# Converting the input string to title case
+title_case_string = title_case(user_input)
+
+# Printing the title case string
+print("String in title case:", title_case_string)
