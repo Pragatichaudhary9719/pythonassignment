@@ -1,0 +1,23 @@
+# Program to calculate the age of the user based on their birth year
+
+# Importing the datetime module
+import datetime
+
+# Function to calculate age
+def calculate_age(birth_year):
+    # Getting the current year
+    current_year = datetime.datetime.now().year
+    
+    # Calculating the age
+    age = current_year - birth_year
+    
+    return age
+
+# Taking input from the user
+birth_year = int(input("Enter your birth year: "))
+
+# Calculating the age
+age = calculate_age(birth_year)
+
+# Printing the age
+print("Your age is:", age)
