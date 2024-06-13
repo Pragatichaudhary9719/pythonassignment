@@ -1,0 +1,16 @@
+# Program to calculate the sum of numbers in a list
+
+def calculate_sum(numbers):
+    total = 0
+    for number in numbers:
+        total += number
+    return total
+
+# Taking input from the user
+try:
+    num_list = input("Enter a list of numbers separated by spaces: ").split()
+    num_list = list(map(float, num_list))  # Convert input strings to float numbers
+    total_sum = calculate_sum(num_list)
+    print("Sum of the numbers:", total_sum)
+except ValueError:
+    print("Error: Please enter valid numbers separated by spaces.")
