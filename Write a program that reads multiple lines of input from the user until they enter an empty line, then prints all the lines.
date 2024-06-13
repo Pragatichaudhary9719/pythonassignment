@@ -1,0 +1,18 @@
+# Program to read multiple lines of input until an empty line is entered, then print all lines
+
+# Initializing an empty list to store lines of input
+lines = []
+
+# Reading input lines until an empty line is entered
+print("Enter lines of text. Press Enter on an empty line to finish.")
+
+while True:
+    line = input()  # Read a line of input
+    if line == "":
+        break  # Exit the loop if the input line is empty
+    lines.append(line)  # Add the line to the list of lines
+
+# Printing all the lines entered by the user
+print("\nLines entered:")
+for line in lines:
+    print(line)
