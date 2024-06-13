@@ -1,0 +1,25 @@
+# Program to count occurrences of a specific element in a list
+
+def count_occurrences(lst, element):
+    count = 0
+    for item in lst:
+        if item == element:
+            count += 1
+    return count
+
+# Example usage:
+try:
+    # Taking input from the user
+    num_list = input("Enter a list of numbers separated by spaces: ").split()
+    num_list = list(map(float, num_list))  # Convert input strings to float numbers
+    
+    # Taking input for the element to count
+    element_to_count = float(input("Enter the element to count: "))
+    
+    # Counting occurrences
+    occurrences = count_occurrences(num_list, element_to_count)
+    
+    # Printing the result
+    print(f"Number of occurrences of {element_to_count}: {occurrences}")
+except ValueError:
+    print("Error: Please enter valid numbers separated by spaces.")
