@@ -1,0 +1,10 @@
+# Program to take a string as input and return its length
+
+# Taking input from the user
+user_input = input("Enter a string: ")
+
+# Calculating the length of the string
+length = len(user_input)
+
+# Printing the length of the string
+print("The length of the entered string is:", length)
